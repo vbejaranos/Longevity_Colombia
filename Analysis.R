@@ -274,7 +274,7 @@ Ts3 <- GD_freq %>% select(-c(vm,aten,PPP_USD,ppp)) %>%
   arrange(year,grupo_edad,sexo) %>% top_n(10)
 writeData(wb,'ts3',Ts3)
 # Save
-saveWorkbook(wb,'Tabs.xlsx',overwrite = TRUE)
+saveWorkbook(wb,'Tables.xlsx',overwrite = TRUE)
 rm(wb)
 
 # ------------------------ | Figures | ------------------------------------ ####
